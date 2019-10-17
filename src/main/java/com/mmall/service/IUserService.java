@@ -45,4 +45,42 @@ public interface IUserService {
      */
     ServerResponse<String> checkAnswer(String username, String question, String answer);
 
+    /**
+     * 登录.重置密码
+     * @param username
+     * @param password
+     * @param forgetToken
+     * @return
+     */
+    ServerResponse<String> forgetRestPassword(String username, String password, String forgetToken);
+
+    /**
+     * 登录.更新密码
+     * @param passwordOld
+     * @param passwordNew
+     * @param user
+     * @return
+     */
+    ServerResponse<String> resetPassword(String passwordOld, String passwordNew, User user);
+
+    /**
+     * 登录.更新个人信息
+     * @param user
+     * @return
+     */
+    ServerResponse<User> updateInfomation(User user);
+
+    /**
+     * 登录.获取用户详细信息
+     * @param userId
+     * @return
+     */
+    ServerResponse<User> getInformation(Integer userId);
+
+    /**
+     * 登录.效验是否是管理员
+     * @param user
+     * @return
+     */
+    ServerResponse chenkAdminRole(User user);
 }
