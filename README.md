@@ -6,7 +6,7 @@
 [数据库sql脚本](/帮助文档/数据库Sql脚本.zip) 
 >Demo简述
 ```
-    这个是之前项目的一个简化
+    纯后端项目,配置和接口,nginx的配置反向代理
     因为时间关系目前只做了用户模块,品类模块,商品模块.
 项目初始化配置
     maven引入了mybatis三剑客
@@ -44,13 +44,22 @@
 ```
 商品列表
 商品搜索
-图标上传
 商品详情
 商品上下架
 新增
+图标上传 springmvc的MultipartFile
 富文本上传图片
+分页用的PageHelper
 ```
 上传成功之后
 {"status":0,"data":{"uri":"8d355f65-6312-414b-8555-6f6323d016b8.png","url":"http://img.zqf.com/8d355f65-6312-414b-8555-6f6323d016b8.png"}}
 图片是先存到Tomcat下的一个文件夹里,然后去链接ftp登录账号密码链接成功存到反向代理img文件夹下
 前面的这个img.zqf.com网址是我用Nginx反向代理的
+
+##Nginx配置
+C:\Windows\System32\drivers\etc\hosts
+里面配置 127.0.0.1 img.zqf.com
+在Nginx/conf/nginx.conf里配置修改为[nginx.conf](/帮助文档/nginx.conf)
+并在Nginx/conf/下创建vhost文件夹
+vhost文件夹放置img.zqf.com.conf [img.zqf.conf](/帮助文档/img.zqf.com.conf)-->注意后缀是conf
+
