@@ -48,7 +48,6 @@ public class UserController {
         return ServerResponse.createBySuccess();
     }
 
-
     /**
      * 登录.注册
      * @param user

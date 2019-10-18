@@ -5,7 +5,8 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import java.io.Serializable;
 
-//保证序列化Json的时候,如果是null的对象,key也会消失
+//高复用服务响应对象的设计思想及封装抽象
+//保证序列化Json的时候,如果对象是null,key也会消失
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class ServerResponse<T> implements Serializable {
 
