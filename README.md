@@ -62,4 +62,4 @@ C:\Windows\System32\drivers\etc\hosts
 在Nginx/conf/nginx.conf里配置修改为[nginx.conf](/帮助文档/nginx.conf)  
 并在Nginx/conf/下创建vhost文件夹    
 vhost文件夹放置img.zqf.com.conf [img.zqf.conf](/帮助文档/img.zqf.com.conf)-->注意后缀是conf   
-
+在mmall.properties配置ftp的ip即可,这样就可以图片传到ftp上了
