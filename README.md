@@ -57,9 +57,9 @@
 前面的这个img.zqf.com网址是我用Nginx反向代理的
 
 ##Nginx配置
-C:\Windows\System32\drivers\etc\hosts
-里面配置 127.0.0.1 img.zqf.com
-在Nginx/conf/nginx.conf里配置修改为[nginx.conf](/帮助文档/nginx.conf)
-并在Nginx/conf/下创建vhost文件夹
-vhost文件夹放置img.zqf.com.conf [img.zqf.conf](/帮助文档/img.zqf.com.conf)-->注意后缀是conf
+C:\Windows\System32\drivers\etc\hosts   
+里面配置 127.0.0.1 img.zqf.com  
+在Nginx/conf/nginx.conf里配置修改为[nginx.conf](/帮助文档/nginx.conf)  
+并在Nginx/conf/下创建vhost文件夹    
+vhost文件夹放置img.zqf.com.conf [img.zqf.conf](/帮助文档/img.zqf.com.conf)-->注意后缀是conf   
 
