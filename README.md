@@ -1,4 +1,4 @@
-> 有问题联系Q573503318.
+> 有问题联系Q573503318
 ```
 因为不是springboot项目,所以没有也没有一个restful风格的后缀.  
 不像boot的接口同名根据method = RequestMehtod.POST或者Delete
