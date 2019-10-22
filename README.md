@@ -51,13 +51,15 @@
 富文本上传图片
 分页用的PageHelper
 ```
-上传成功之后
+上传成功之后返回信息意思
+```
 {"status":0,"data":{"uri":"8d355f65-6312-414b-8555-6f6323d016b8.png","url":"http://img.zqf.com/8d355f65-6312-414b-8555-6f6323d016b8.png"}}
-图片是先存到Tomcat下的一个文件夹里,然后去链接ftp登录账号密码链接成功存到反向代理img文件夹下
+``` 
+图片是先存到Tomcat下的一个文件夹里,然后去链接ftp登录账号密码,链接成功我这里是存到反向代理本地ftp的img文件夹下.
 前面的这个img.zqf.com网址是我用Nginx反向代理的
 
-##Nginx配置
-C:\Windows\System32\drivers\etc\hosts   
+## Nginx配置
+Windows系统的话目录在C:\Windows\System32\drivers\etc\hosts   
 里面配置 127.0.0.1 img.zqf.com  
 在Nginx/conf/nginx.conf里配置修改为[nginx.conf](/帮助文档/nginx.conf)  
 并在Nginx/conf/下创建vhost文件夹    
