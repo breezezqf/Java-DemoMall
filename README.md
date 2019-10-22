@@ -48,7 +48,7 @@
 商品上下架
 新增
 图标上传 springmvc的MultipartFile
-富文本上传图片
+富文本上传图片 用的是simditor,所以按照是simditor的要求进行返回,我代码没创建这个返回值对象,直接放到map里了
 分页用的PageHelper
 ```
 上传成功之后返回信息意思
